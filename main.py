@@ -206,8 +206,6 @@ while True:  # game loop
                 moving_right = False
             elif event.key == K_LEFT:
                 moving_left = False
-            elif event.key != K_RIGHT and event.key != K_LEFT:
-
 
     surf = pygame.transform.scale(display, WINDOW_SIZE)
     screen.blit(surf, (0, 0))
