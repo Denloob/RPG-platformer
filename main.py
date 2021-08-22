@@ -3,6 +3,7 @@ import pygame
 from pygame.locals import *  # import pygame modules
 
 from assets.data.spritesheetParser import Parse
+from assets.data.crypt import Crypt
 
 pygame.init()  # initiate pygame
 clock = pygame.time.Clock()  # set up the clock
