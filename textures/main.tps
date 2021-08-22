@@ -32,7 +32,7 @@
         <key>dpi</key>
         <uint>72</uint>
         <key>dataFormat</key>
-        <string>json-array</string>
+        <string>json</string>
         <key>textureFileName</key>
         <filename>main.png</filename>
         <key>flipPVR</key>
@@ -181,14 +181,14 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -201,14 +201,14 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -221,159 +221,160 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/column_mid.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/column_top.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/coulmn_base.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/edge.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/flask_big_blue.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/flask_big_green.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/flask_big_red.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/flask_big_yellow.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/flask_blue.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/flask_green.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/flask_red.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/flask_yellow.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_4.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_5.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_6.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_7.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_8.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_ladder.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/hole.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/skull.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ui_heart_empty.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ui_heart_full.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ui_heart_half.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_banner_blue.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_banner_green.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_banner_red.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_banner_yellow.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_column_mid.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_column_top.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_corner_bottom_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_corner_bottom_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_corner_front_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_corner_front_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_corner_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_corner_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_corner_top_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_corner_top_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_coulmn_base.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_top.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_goo.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_goo_base.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_hole_1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_hole_2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_l_top_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_l_top_rigth.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_mid_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_mid_rigth.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_t_top_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_t_top_rigth.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_mid.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_side_front_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_side_front_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_side_mid_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_side_mid_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_side_top_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_side_top_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_top_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_top_mid.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wall_top_right.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/column_mid.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/column_top.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/coulmn_base.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/edge.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/flask_big_blue.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/flask_big_green.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/flask_big_red.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/flask_big_yellow.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/flask_blue.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/flask_green.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/flask_red.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/flask_yellow.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_4.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_5.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_6.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_7.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_8.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_ladder.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/hole.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/skull.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ui_heart_empty.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ui_heart_full.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ui_heart_half.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_banner_blue.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_banner_green.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_banner_red.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_banner_yellow.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_column_mid.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_column_top.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_corner_bottom_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_corner_bottom_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_corner_front_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_corner_front_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_corner_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_corner_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_corner_top_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_corner_top_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_coulmn_base.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_fountain_top.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_goo.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_goo_base.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_hole_1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_hole_2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_l_top_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_l_top_rigth.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_mid_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_mid_rigth.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_t_top_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_t_top_rigth.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_left_dark.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_mid.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_mid_dark.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_right_dark.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_side_front_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_side_front_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_side_mid_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_side_mid_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_side_top_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_side_top_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_top_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_top_mid.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wall_top_right.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -386,14 +387,14 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -406,10 +407,10 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/coin_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/coin_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/coin_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/coin_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/coin_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/coin_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/coin_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/coin_anim_f3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -422,7 +423,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/crate.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/crate.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -435,7 +436,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/doors_all.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/doors_all.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -448,8 +449,8 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/doors_frame_left.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/doors_frame_righ.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/doors_frame_left.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/doors_frame_righ.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -462,7 +463,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/doors_frame_top.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/doors_frame_top.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -475,16 +476,16 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/doors_leaf_closed.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/doors_leaf_open.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/doors_leaf_closed.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/doors_leaf_open.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -497,78 +498,78 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_hit_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_hit_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_hit_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_hit_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_hit_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_hit_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_hit_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_hit_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_hit_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_hit_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_hit_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_hit_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_hit_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_hit_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_hit_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_hit_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -581,46 +582,60 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f3.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f0.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f1.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f2.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f0.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.4375,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>4,4,8,8</rect>
+                <key>scale9Paddings</key>
+                <rect>4,4,8,8</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f3.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f0.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f1.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f2.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -633,7 +648,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_anime_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_anime_sword.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -646,7 +661,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_arrow.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_arrow.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -659,7 +674,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_axe.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_axe.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -672,8 +687,8 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_baton_with_spikes.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_golden_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_baton_with_spikes.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_golden_sword.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -686,7 +701,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_big_hammer.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_big_hammer.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -699,7 +714,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_bow.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_bow.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -712,7 +727,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_cleaver.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_cleaver.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -725,7 +740,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_duel_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_duel_sword.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -738,8 +753,8 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_green_magic_staff.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_red_magic_staff.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_green_magic_staff.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_red_magic_staff.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -752,8 +767,8 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_hammer.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_mace.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_hammer.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_mace.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -766,7 +781,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_katana.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_katana.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -779,7 +794,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_knife.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_knife.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -792,7 +807,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_knight_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_knight_sword.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -805,7 +820,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_lavish_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_lavish_sword.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -818,7 +833,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_machete.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_machete.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -831,9 +846,9 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_red_gem_sword.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_regular_sword.png</key>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_rusty_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_red_gem_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_regular_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_rusty_sword.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -846,7 +861,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_saw_sword.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_saw_sword.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -859,7 +874,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../0x72_DungeonTilesetII_v1.4/frames/weapon_spear.png</key>
+            <key type="filename">0x72_DungeonTilesetII_v1.4/frames/weapon_spear.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -875,337 +890,340 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_lavish_sword.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_mace.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_machete.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_red_gem_sword.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_red_magic_staff.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_regular_sword.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_rusty_sword.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_saw_sword.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_spear.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_hit_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_hit_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/coin_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/coin_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/coin_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/coin_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/column_mid.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/column_top.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/coulmn_base.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/crate.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/doors_all.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/doors_frame_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/doors_frame_righ.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/doors_frame_top.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/doors_leaf_closed.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/doors_leaf_open.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/edge.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_hit_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_hit_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/flask_big_blue.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/flask_big_green.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/flask_big_red.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/flask_big_yellow.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/flask_blue.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/flask_green.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/flask_red.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/flask_yellow.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_4.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_5.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_6.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_7.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_8.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_ladder.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/hole.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_hit_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_hit_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_hit_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_hit_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/skull.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f3.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ui_heart_empty.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ui_heart_full.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/ui_heart_half.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_banner_blue.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_banner_green.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_banner_red.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_banner_yellow.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_column_mid.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_column_top.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_corner_bottom_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_corner_bottom_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_corner_front_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_corner_front_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_corner_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_corner_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_corner_top_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_corner_top_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_coulmn_base.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f0.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_fountain_top.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_goo.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_goo_base.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_hole_1.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_hole_2.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_l_top_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_l_top_rigth.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_mid_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_mid_rigth.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_t_top_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_t_top_rigth.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_mid.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_side_front_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_side_front_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_side_mid_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_side_mid_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_side_top_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_side_top_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_top_left.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_top_mid.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/wall_top_right.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_anime_sword.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_arrow.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_axe.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_baton_with_spikes.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_big_hammer.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_bow.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_cleaver.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_duel_sword.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_golden_sword.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_green_magic_staff.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_hammer.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_katana.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_knife.png</filename>
-            <filename>../0x72_DungeonTilesetII_v1.4/frames/weapon_knight_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wogol_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wogol_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/zombie_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/zombie_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_demon_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_zombie_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/big_zombie_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_empty_open_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_full_open_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chest_mimic_open_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chort_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/chort_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/coin_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/coin_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/coin_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/coin_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/column_mid.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/column_top.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/coulmn_base.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/crate.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/doors_all.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/doors_frame_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/doors_frame_righ.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/doors_frame_top.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/doors_leaf_closed.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/doors_leaf_open.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/edge.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_hit_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_f_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_hit_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/elf_m_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/flask_big_blue.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/flask_big_green.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/flask_big_red.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/flask_big_yellow.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/flask_blue.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/flask_green.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/flask_red.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/flask_yellow.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_4.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_5.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_6.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_7.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_8.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_ladder.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/floor_spikes_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/goblin_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/goblin_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/hole.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ice_zombie_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ice_zombie_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/imp_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/imp_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_hit_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_f_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_hit_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/knight_m_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_hit_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_f_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_hit_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/lizard_m_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/masked_orc_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/masked_orc_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/muddy_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/muddy_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/necromancer_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/necromancer_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ogre_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ogre_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_shaman_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_shaman_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_warrior_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/orc_warrior_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skelet_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skelet_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/skull.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/swampy_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/swampy_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/tiny_zombie_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ui_heart_empty.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ui_heart_full.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/ui_heart_half.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_banner_blue.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_banner_green.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_banner_red.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_banner_yellow.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_column_mid.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_column_top.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_corner_bottom_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_corner_bottom_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_corner_front_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_corner_front_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_corner_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_corner_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_corner_top_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_corner_top_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_coulmn_base.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_blue_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_basin_red_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_blue_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_mid_red_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_fountain_top.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_goo.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_goo_base.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_hole_1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_hole_2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_l_top_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_l_top_rigth.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_mid_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_mid_rigth.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_t_top_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_inner_corner_t_top_rigth.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_mid.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_side_front_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_side_front_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_side_mid_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_side_mid_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_side_top_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_side_top_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_top_left.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_top_mid.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_top_right.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_anime_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_arrow.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_axe.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_baton_with_spikes.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_big_hammer.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_bow.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_cleaver.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_duel_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_golden_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_green_magic_staff.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_hammer.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_katana.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_knife.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_knight_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_lavish_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_mace.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_machete.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_red_gem_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_red_magic_staff.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_regular_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_rusty_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_saw_sword.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/weapon_spear.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_hit_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_f_run_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_hit_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f2.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f3.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f0.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wizzard_m_run_anim_f1.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_mid_dark.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_right_dark.png</filename>
+            <filename>0x72_DungeonTilesetII_v1.4/frames/wall_left_dark.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
