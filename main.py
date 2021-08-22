@@ -2,7 +2,7 @@ import sys
 import pygame
 from pygame.locals import *  # import pygame modules
 
-from spritesheetParser import Parse
+from assets.data.spritesheetParser import Parse
 
 pygame.init()  # initiate pygame
 clock = pygame.time.Clock()  # set up the clock
@@ -15,7 +15,7 @@ screen = pygame.display.set_mode(WINDOW_SIZE, 0, 32)  # initiate screen
 
 display = pygame.Surface((300, 200))
 
-spritesheet = Parse('textures/main.png')  # create an instance of the Parse class
+spritesheet = Parse('assets/textures/main.png')  # create an instance of the Parse class
 character_images = {
     'knight_f': {
         'run': spritesheet.parse_animation('knight_f', 'run'),
