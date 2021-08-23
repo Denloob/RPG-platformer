@@ -70,33 +70,10 @@ walls = {
 }  # creating a dictionary with walls sprites and wall animations
 TILE_SIZE = 16  # set up general tiles size, like floor, walls, etc.
 
-game_map = [
-    ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0',
-     '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
-    ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0',
-     '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
-    ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0',
-     '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
-    ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0',
-     '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
-    ['0', '0', '0', '0', '0', '0', '4', '2', '2', '2', '2', '2', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0',
-     '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
-    ['0', '0', '0', '0', '0', '0', '5', '0', '0', '0', '0', '0', '5', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0',
-     '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
-    ['2', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2', '2', '2', '2', '2', '2',
-     '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2'],
-    ['1', '1', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '1', '1', '2', '2', '2', '2',
-     '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2'],
-    ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1',
-     '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1'],
-    ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1',
-     '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1'],
-    ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1',
-     '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1'],
-    ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1',
-     '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1'],
-    ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1',
-     '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']]
+true_scroll = [0, 0]
+
+game_map = Crypt.map_decrypt(key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=', file_path='assets/data/game_map.dat')
+game_map = [list(layer) for layer in game_map.split('\n')]
 
 
 def collision_test(rect, tiles):
@@ -140,28 +117,41 @@ air_timer = 0
 
 player_rect = pygame.Rect(50, 50, player_image.get_width(), player_image.get_height())
 test_rect = pygame.Rect(100, 100, 100, 50)
-
 while True:  # game loop
     display.fill((146, 244, 255))
+
+    true_scroll[0] += (player_rect.x - true_scroll[0] - WINDOW_SIZE[0] / 4 + player_rect.size[0]) / 20
+    true_scroll[1] += (player_rect.y - true_scroll[1] - WINDOW_SIZE[1] / 4) / 20
+
+    if true_scroll[1] < 6:
+        true_scroll[1] = 6
+
+    scroll = true_scroll.copy()
+    scroll[0] = int(scroll[0])
+    scroll[1] = int(scroll[1])
+
     tile_rects = []
     y = 0
-    for row in game_map:
+    for layer in game_map:
         x = 0
-        for tile in row:
+        for tile in layer:
             if tile == '0':
-                display.blit(walls['walls']['normal']['middle'], (x * TILE_SIZE, y * TILE_SIZE))
+                display.blit(walls['walls']['normal']['middle'], (x * TILE_SIZE - scroll[0], y * TILE_SIZE - scroll[1]))
             elif tile == '1':
-                display.blit(walls['walls']['dark']['middle'], (x * TILE_SIZE, y * TILE_SIZE))
+                display.blit(walls['walls']['dark']['middle'], (x * TILE_SIZE - scroll[0], y * TILE_SIZE - scroll[1]))
+                tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE))
             elif tile == '2':
-                display.blit(floors[1], (x * TILE_SIZE, y * TILE_SIZE))
+                display.blit(floors[1], (x * TILE_SIZE - scroll[0], y * TILE_SIZE - scroll[1]))
                 tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE + TILE_SIZE / 2, TILE_SIZE, TILE_SIZE))
             elif tile == '3':
-                display.blit(walls['fountains']['top'], (x * TILE_SIZE, y * TILE_SIZE))
+                display.blit(walls['fountains']['top'], (x * TILE_SIZE - scroll[0], y * TILE_SIZE - scroll[1]))
             elif tile == '4':
-                display.blit(walls['fountains']['middle']['red'][0], (x * TILE_SIZE, y * TILE_SIZE))
+                display.blit(walls['fountains']['middle']['red'][0],
+                             (x * TILE_SIZE - scroll[0], y * TILE_SIZE - scroll[1]))
                 tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE + TILE_SIZE / 2 + 2, TILE_SIZE, TILE_SIZE))
             elif tile == '5':
-                display.blit(walls['fountains']['basin']['red'][0], (x * TILE_SIZE, y * TILE_SIZE))
+                display.blit(walls['fountains']['basin']['red'][0],
+                             (x * TILE_SIZE - scroll[0], y * TILE_SIZE - scroll[1]))
                 tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE))
             x += 1
         y += 1
@@ -188,7 +178,7 @@ while True:  # game loop
     else:
         air_timer += 1
 
-    display.blit(player_image, (player_rect.x, player_rect.y))
+    display.blit(player_image, (player_rect.x - scroll[0], player_rect.y - scroll[1]))
 
     for event in pygame.event.get():  # event loop
         if event.type == QUIT:  # check for window quit
