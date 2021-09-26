@@ -62,3 +62,7 @@ class Crypt:
                 text = f.read().encode()
 
         return Fernet(key).decrypt(text).decode("utf-8")
+
+# cd .\assets\data\
+# python.exe -value crypt.py
+# Crypt.map_encrypt(file_path='map.txt', save=True, save_path='game_map.dat',key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=')
