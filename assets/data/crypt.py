@@ -23,7 +23,8 @@ class Crypt:
     def map_encrypt(game_map: str = None, file_path: str = None, key: bytes = None,
                     save: bool = False, save_path: str = None) -> None or bytes:
 
-        if game_map is None and file_path is None or game_map is not None and file_path is not None:
+        if game_map is None and file_path is None or \
+                game_map is not None and file_path is not None:  # if both is None or both isn't
             return None
         elif game_map is not None:
             text = game_map
@@ -49,7 +50,7 @@ class Crypt:
                 f.write(end_text)
             return None
 
-        return Fernet(key).encrypt(text.encode())
+        return Fernet(key).encrypt(text.encode())  # if not saving
 
     @staticmethod
     def map_decrypt(key: bytes, game_map: bytes = None, file_path: str = None) -> None or str:

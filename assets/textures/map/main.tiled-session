@@ -1,5 +1,5 @@
 {
-    "activeFile": "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 1/main.tmx",
+    "activeFile": "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 6/main.tmx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -56,8 +56,44 @@
             "scale": 1,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 312,
-                "y": 106
+                "x": 311,
+                "y": 237
+            }
+        },
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 5,5/main.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 748,
+                "y": 318
+            }
+        },
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 5/main.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 163,
+                "y": 246.5
+            }
+        },
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 6/main.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 392.25,
+                "y": 329
+            }
+        },
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 6/main.tmx#interactive_objects": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 7/main.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 18,
+                "y": -9.333333333333371
             }
         },
         "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level end/main.tmx": {
@@ -74,7 +110,8 @@
         },
         "interactive_objects.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 11
+            "scaleInDock": 3,
+            "scaleInEditor": 11
         },
         "items.tsx": {
             "dynamicWrapping": true,
@@ -95,26 +132,28 @@
             "scaleInEditor": 4
         }
     },
-    "last.exportedFilePath": "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 4",
-    "last.imagePath": "D:/Documents/GitHub/RPG-platformer/assets/textures/Tiles/frames",
+    "last.exportedFilePath": "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 7",
+    "last.imagePath": "D:/Documents/GitHub/RPG-platformer/assets/textures/interactive_objects_types",
     "map.lastUsedExportFilter": "CSV files (*.csv)",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 1/main.tmx"
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 6/main.tmx",
+        "interactive_objects.tsx"
     ],
     "project": "",
     "recentFiles": [
-        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 1/main.tmx",
+        "interactive_objects.tsx",
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 6/main.tmx",
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 7/main.tmx",
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 5/main.tmx",
         "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 4/main.tmx",
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 5,5/main.tmx",
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 1/main.tmx",
         "items.tsx",
         "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level end/main.tmx",
         "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 3/main.tmx",
         "D:/Documents/GitHub/RPG-platformer/assets/data/maps/level 2/main.tmx",
-        "D:/Documents/GitHub/RPG-platformer/assets/data/maps arch/level 3/main.tmx",
-        "D:/Documents/GitHub/RPG-platformer/assets/data/maps arch/level 1/main.tmx",
-        "main.tsx",
-        "main.tmx",
-        "MainTileset.tsx"
+        "D:/Documents/GitHub/RPG-platformer/assets/data/maps arch/level 3/main.tmx"
     ],
     "resizeMap.removeObjects": true,
     "tileset.lastUsedFormat": "tsx",

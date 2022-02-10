@@ -1,21 +1,46 @@
+import string
+import pickle
+import math
+from os import walk as os_walk
+from sys import exit  # import exit from sys to completely stop the code after trying to exit
+
 import pygame  # import the pygame module
 from pygame.locals import *  # import pygame modules
-from sys import exit  # import exit from sys to completely stop the code after trying to exit
-from assets.data.spritesheet_parser import Parse  # sprite sheet parser which can parse png files with data in json
-from assets.data.crypt import Crypt
-import string
 
+from assets.data.crypt import Crypt
+from assets.data.spritesheet_parser import Parse  # sprite sheet parser which can parse png files with data in json
+
+from assets.data.game_console import Console
+
+import logging
+from colorlog import ColoredFormatter
+
+# initiate logging
+stream = logging.StreamHandler()
+stream.setFormatter(ColoredFormatter("%(log_color)s%(message)s%(reset)s"))
+
+log = logging.getLogger('pythonConfig')
+log.setLevel(logging.DEBUG)
+log.addHandler(stream)
+
+log.debug("Logging initiated")
+
+log.debug("Initializing pygame")
 pygame.init()  # initiate pygame
+log.debug("Initializing pygame complete")
 
 pygame.event.set_allowed([QUIT, KEYDOWN, KEYUP])
 
+log.debug("Defining constants")
 clock, WINDOW_SIZE = pygame.time.Clock(), (1200, 800)  # set up the clock and windows_size
 screen = pygame.display.set_mode(WINDOW_SIZE, 0, 32)  # initiate screen
 TILE_SIZE, CHUNK_SIZE = 16, 16  # set up general tiles size, like floor, walls, etc and chunk size
 display, ui = pygame.Surface((600, 400)), pygame.Surface((3 * TILE_SIZE, TILE_SIZE), pygame.SRCALPHA, 32)
 text_surf = pygame.Surface((100, 100), pygame.SRCALPHA, 32)
 pygame.display.set_caption('Pygame Window')  # set the window name
+log.debug("Defining constants complete")
 
+log.debug("Parsing spritesheet")
 spritesheet = Parse('assets/textures/main.png')  # create an instance of the Parse class
 images = {
     'character_images': {
@@ -39,7 +64,97 @@ images = {
             'idle': spritesheet.parse_animation('wizzard_m', 'idle'),
             'hit': [spritesheet.parse_entity(name='wizzard_m', mode='hit', frame=0)]
         },
+        'lizard_f': {
+            'run': spritesheet.parse_animation('lizard_f', 'run'),
+            'idle': spritesheet.parse_animation('lizard_f', 'idle'),
+            'hit': [spritesheet.parse_entity(name='lizard_f', mode='hit', frame=0)]
+        },
+        'lizard_m': {
+            'run': spritesheet.parse_animation('lizard_m', 'run'),
+            'idle': spritesheet.parse_animation('lizard_m', 'idle'),
+            'hit': [spritesheet.parse_entity(name='lizard_m', mode='hit', frame=0)]
+        },
+        'elf_f': {
+            'run': spritesheet.parse_animation('elf_f', 'run'),
+            'idle': spritesheet.parse_animation('elf_f', 'idle'),
+            'hit': [spritesheet.parse_entity(name='elf_f', mode='hit', frame=0)]
+        },
+        'elf_m': {
+            'run': spritesheet.parse_animation('elf_m', 'run'),
+            'idle': spritesheet.parse_animation('elf_m', 'idle'),
+            'hit': [spritesheet.parse_entity(name='elf_m', mode='hit', frame=0)]
+        },
     },  # creating a dictionary with animations of the main characters
+    'enemies': {
+        'skelet': {
+            'idle': spritesheet.parse_animation('skelet', 'idle'),
+            'run': spritesheet.parse_animation('skelet', 'run'),
+        },
+        'big_zombie': {
+            'idle': spritesheet.parse_animation('big_zombie', 'idle'),
+            'run': spritesheet.parse_animation('big_zombie', 'run'),
+        },
+        'zombie': {
+            'idle': spritesheet.parse_animation('zombie', 'idle'),
+            'run': spritesheet.parse_animation('zombie', 'run'),
+        },
+        'tiny_zombie': {
+            'idle': spritesheet.parse_animation('tiny_zombie', 'idle'),
+            'run': spritesheet.parse_animation('tiny_zombie', 'run'),
+        },
+        'ice_zombie': {
+            'idle': spritesheet.parse_animation('ice_zombie', 'idle'),
+            'run': spritesheet.parse_animation('ice_zombie', 'run'),
+        },
+        'big_demon': {
+            'idle': spritesheet.parse_animation('big_demon', 'idle'),
+            'run': spritesheet.parse_animation('big_demon', 'run'),
+        },
+        'chort': {
+            'idle': spritesheet.parse_animation('chort', 'idle'),
+            'run': spritesheet.parse_animation('chort', 'run'),
+        },
+        'goblin': {
+            'idle': spritesheet.parse_animation('goblin', 'idle'),
+            'run': spritesheet.parse_animation('goblin', 'run'),
+        },
+        'imp': {
+            'idle': spritesheet.parse_animation('imp', 'idle'),
+            'run': spritesheet.parse_animation('imp', 'run'),
+        },
+        'masked_orc': {
+            'idle': spritesheet.parse_animation('masked_orc', 'idle'),
+            'run': spritesheet.parse_animation('masked_orc', 'run'),
+        },
+        'muddy': {
+            'idle': spritesheet.parse_animation('muddy', 'idle'),
+            'run': spritesheet.parse_animation('muddy', 'run'),
+        },
+        'necromancer': {
+            'idle': spritesheet.parse_animation('necromancer', 'idle'),
+            'run': spritesheet.parse_animation('necromancer', 'run'),
+        },
+        'ogre': {
+            'idle': spritesheet.parse_animation('ogre', 'idle'),
+            'run': spritesheet.parse_animation('ogre', 'run'),
+        },
+        'orc_shaman': {
+            'idle': spritesheet.parse_animation('orc_shaman', 'idle'),
+            'run': spritesheet.parse_animation('orc_shaman', 'run'),
+        },
+        'orc_warrior': {
+            'idle': spritesheet.parse_animation('orc_warrior', 'idle'),
+            'run': spritesheet.parse_animation('orc_warrior', 'run'),
+        },
+        'swampy': {
+            'idle': spritesheet.parse_animation('swampy', 'idle'),
+            'run': spritesheet.parse_animation('swampy', 'run'),
+        },
+        'wogol': {
+            'idle': spritesheet.parse_animation('wogol', 'idle'),
+            'run': spritesheet.parse_animation('wogol', 'run'),
+        },
+    },  # creating a dictionary with animations of the enemies
     'walls': {
         'banners': spritesheet.parse_by_name('banner'),
         'columns': spritesheet.parse_by_name('column'),
@@ -107,38 +222,74 @@ images['floors']['hole'] = spritesheet.parse_sprite('hole.png')  # add hole.png 
 images['floors']['spikes'] = spritesheet.parse_animation('floor', 'spikes')  # add spikes animation to floors dictionary
 # noinspection PyTypeChecker
 images['floors']['goo'] = spritesheet.parse_sprite('wall_goo_base.png')  # add floor with goo to floors dictionary
+log.debug('Parsing complete')
 
+log.debug('Defining player data')
 player_images = images['character_images']['knight_m']
 player_image = player_images['idle']
 
 speed = 2  # set up player speed
-STARTING_POSITION = (2 * TILE_SIZE, 12.25 * TILE_SIZE)
+starting_position = (2 * TILE_SIZE, 12.25 * TILE_SIZE)
 true_scroll = [0, 0]
 
 moving = {'left': False, 'right': False}
 
 player_y_momentum, air_timer = 0, 0
 
-player_rect = pygame.Rect(STARTING_POSITION[0], STARTING_POSITION[1], player_image[0].get_width(),
+player_rect = pygame.Rect(starting_position[0], starting_position[1], player_image[0].get_width(),
                           player_image[0].get_height())
-old_level_name, level_name = 0, 1
-with open(f'assets/data/maps/level {level_name}/map_background.csv') as f1, \
-        open(f'assets/data/maps/level {level_name}/map_mid.csv') as f2, \
-        open(f'assets/data/maps/level {level_name}/map_top.csv') as f3, \
-        open(f'assets/data/maps/level {level_name}/map_interactive_objects_types.csv') as f4, \
-        open(f'assets/data/maps/level {level_name}/map.csv', 'w') as target:
-    target.write(
-        f1.read() + '\\' + '\n' +
-        f2.read() + '\\' + '\n' +
-        f3.read() + '\\' + '\n' +
-        f4.read()[:-1]
-    )
+log.debug('Player data defined')
 
-Crypt.map_encrypt(file_path=f'assets/data/maps/level {level_name}/map.csv', save=True,
-                  save_path='assets/data/game_map.dat',
-                  key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=')
-map_decrypted = Crypt.map_decrypt(key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=',
-                                  file_path='assets/data/game_map.dat')
+log.debug('Parsing levels')
+old_level_name, level_name = -1, 0
+# with open(f'assets/data/maps/level {level_name}/map_background.csv') as f1, \
+#         open(f'assets/data/maps/level {level_name}/map_mid.csv') as f2, \
+#         open(f'assets/data/maps/level {level_name}/map_top.csv') as f3, \
+#         open(f'assets/data/maps/level {level_name}/map_interactive_objects_types.csv') as f4, \
+#         open(f'assets/data/maps/level {level_name}/map.csv', 'w') as target:
+#     target.write(
+#         f1.read() + '\\' + '\n' +
+#         f2.read() + '\\' + '\n' +
+#         f3.read() + '\\' + '\n' +
+#         f4.read()[:-1]
+#     )
+#
+# Crypt.map_encrypt(file_path=f'assets/data/maps/level {level_name}/map.csv', save=True,
+#                   save_path='assets/data/game_map.dat',
+#                   key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=')
+# map_decrypted = Crypt.map_decrypt(key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=',
+#                                   file_path='assets/data/game_map.dat')
+
+# remove this on release
+
+levels_data = []
+for folder_path in [x[0] for x in os_walk('assets/data/maps/') if x[0] != 'assets/data/maps/']:
+    with open(f'{folder_path}/map_background.csv') as f1, \
+            open(f'{folder_path}/map_mid.csv') as f2, \
+            open(f'{folder_path}/map_top.csv') as f3, \
+            open(f'{folder_path}/map_interactive_objects_types.csv') as f4, \
+            open(f'{folder_path}/map.csv', 'w') as target:
+        data = (
+                f1.read() + '\\' + '\n' +
+                f2.read() + '\\' + '\n' +
+                f3.read() + '\\' + '\n' +
+                f4.read()[:-1]
+        )
+        levels_data.append(Crypt.map_encrypt(game_map=data,
+                                             key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o='))
+        target.write(data)
+
+with open('assets/data/game_map.dat', 'wb') as f:
+    pickle.dump(levels_data, f)
+with open('assets/data/game_map.dat', 'rb') as f:
+    levels_data_decrypted = [
+        Crypt.map_decrypt(key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=',
+                          game_map=level_data)
+        for level_data in pickle.load(f)
+    ]
+log.debug('Levels parsed')
+
+log.debug('Loading game map')
 # map_layers = [row.split(',') for row in [(layer.split('\n')) for layer in map_decrypted.split('\n\\\n')]]
 # layers = [layer.split('\n') for layer in map_decrypted.split('\n\\\n')]
 # game_map = []
@@ -147,16 +298,17 @@ map_decrypted = Crypt.map_decrypt(key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJ
 #     for row in layer:
 #         rows.append(row.split(','))
 #     game_map.append(rows)
-
 game_map = [
     [row.split(',') for row in layer] for layer in  # layer.split('\n') -> rows | row.split(',') -> ids
-    [layer.split('\n') for layer in map_decrypted.split('\n\\\n')]  # map_decrypted.split('\n\\\n') -> layers
+    [layer.split('\n') for layer in levels_data_decrypted[level_name].split('\n\\\n')]
+    # map_decrypted.split('\n\\\n') -> layers
 ]  # list with layers (lists) which contain rows which contain ids [layer[ row[id('42'), ...], row[] ], layer[...]]
 
 # type(game_map) == list, type(game_map[0]) == list, type(game_map[0][0]) == list, type(game_map[0][0][0]) == str
 
 map_items = game_map.pop(2)[:-1]
 game_interactive_objects = game_map.pop(2)[:-1]
+log.debug('Game map loaded')
 
 
 def print_list(lst: list, level=0, org_list=True):
@@ -171,6 +323,9 @@ def print_list(lst: list, level=0, org_list=True):
             print('\n')
     if org_list:
         print('    ]')
+
+
+log.debug('Defining functions')
 
 
 def collision_test(rect: pygame.Rect, tiles: list) -> list:
@@ -202,18 +357,71 @@ def move(rect, movement, tiles):
     return rect, collision_types  # return players rect and all collision types
 
 
+log.debug('Functions defined')
+
+log.debug('Defining animations data')
 player_flip, is_moving = False, False
 true_anim_game_frame = {'player': 0, 'spikes': 0, 'liquid_water': 0, 'liquid_lava': 0, 'fire': 0, 'item': 0}
 anim_game_frame = true_anim_game_frame.copy()
+log.debug('Animations data defined')
 
 # config
+log.debug('Loading configs')
 tile_rects = []
 interactive_objects_rects = [[], []]
+enemies = []
 damage_rects = {
     'spikes': [],
     'lava': [],
     'water': [],
 }
+
+
+class GameConsole:
+    def __init__(self):
+        self.gamemode = 'survival'
+        self.speed = 2
+
+    def change_gamemode(self, mode):
+        if type(mode) == str:
+            self.gamemode = mode
+        elif type(mode) == int:
+            self.gamemode = ['survival', 'creative'][mode]
+        else:
+            raise ValueError('Invalid gamemode')
+
+    def change_speed(self, speed):
+        if type(speed) == int:
+            self.speed = speed
+        else:
+            raise ValueError('Invalid speed')
+
+
+console_config = {
+    'global': {
+        'layout': 'INPUT_BOTTOM',
+        'padding': (10, 10, 10, 10),
+        'bck_alpha': 150,
+        'welcome_msg': 'You found the console!\n***************\n'
+                       'Type "exit" to quit the game\nType "help" or "?" for help',
+        'welcome_msg_color': (0, 255, 0)
+    },
+    'input': {
+        'font_file': 'assets/data/pygame_console/fonts/JackInput.ttf',
+        'bck_alpha': 0
+    },
+    'output': {
+        'font_file': 'assets/data/pygame_console/fonts/JackInput.ttf',
+        'bck_alpha': 0,
+        'display_lines': 20,
+        'display_columns': 100
+    },
+}
+consoleAPI = GameConsole()
+console = Console(consoleAPI, WINDOW_SIZE[0], console_config)
+log.debug('Configs loaded')
+
+log.debug('Creating Font class')
 
 
 class Font:
@@ -246,7 +454,7 @@ class Font:
                 self.characters[char] = spritesheet.parse_sprite(f'characters_symbol_{symbol}.png')
         self.space_width = self.characters["'"].get_width()
 
-    def render(self, surf: pygame.Surface, text: str, loc: (int, int)) -> None:
+    def render(self, surf: pygame.Surface, text: str, loc: (float, float)) -> None:
         x_offset = 0
         for char in text:
             if char != ' ':
@@ -256,23 +464,29 @@ class Font:
                 x_offset += self.space_width + self.spacing
 
 
+log.debug('Font class created')
+
+log.debug('initializing fonts')
 font = Font()
+log.debug('fonts initialized')
 
 
 def blit_tile(texture: pygame.Surface or list, x: float, y: float,
               physics: float = 0):  # PS or list is only because of pycharm error
     display.blit(texture, (x * TILE_SIZE - scroll[0], y * TILE_SIZE - scroll[1]))
-    if not creative:
-        if physics == 0:
-            pass
-        elif physics == 1:
-            tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE))
-        elif physics == 0.5:
-            tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE + TILE_SIZE / 2, TILE_SIZE, TILE_SIZE))
-        elif physics == 0.6:
-            tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE + TILE_SIZE / 2 + 2, TILE_SIZE, TILE_SIZE))
-        elif physics == 0.7:
-            tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE + TILE_SIZE / 2 + 1, TILE_SIZE, TILE_SIZE))
+    if consoleAPI.gamemode == 'creative':
+        return
+
+    if physics == 0:
+        pass
+    elif physics == 1:
+        tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+    elif physics == 0.5:
+        tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE + TILE_SIZE / 2, TILE_SIZE, TILE_SIZE))
+    elif physics == 0.6:
+        tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE + TILE_SIZE / 2 + 2, TILE_SIZE, TILE_SIZE))
+    elif physics == 0.7:
+        tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE + TILE_SIZE / 2 + 1, TILE_SIZE, TILE_SIZE))
 
 
 show_tutorial = True
@@ -389,7 +603,7 @@ def blit_tiles(layer_map: list,
             elif tile == '7':
                 blit_tile(images['walls']['columns']['mid'], x, y)  # column_mid.png
             elif tile == '8':
-                blit_tile(images['walls']['columns']['top'], x, y)  # column_top.png
+                blit_tile(images['walls']['columns']['top'], x, y, 0.5)  # column_top.png
             elif tile == '9':
                 blit_tile(images['walls']['doors']['frame_left_down'], x, y)  # doors_frame_left_down.png
             elif tile == '10':
@@ -443,9 +657,9 @@ def blit_tiles(layer_map: list,
             elif tile == '34':
                 blit_tile(images['walls']['banners']['wall']['yellow'], x, y)  # wall_banner_yellow.png
             elif tile == '35':
-                blit_tile(images['walls']['columns']['base'], x, y)  # wall_column_base.png
+                blit_tile(images['walls']['columns']['wall']['base'], x, y, 0.5)  # wall_column_base.png
             elif tile == '36':
-                blit_tile(images['walls']['columns']['mid'], x, y)  # wall_column_mid.png
+                blit_tile(images['walls']['columns']['wall']['mid'], x, y)  # wall_column_mid.png
             elif tile == '37':
                 blit_tile(images['walls']['columns']['top'], x, y)  # wall_column_top.png
             elif tile == '38':
@@ -498,7 +712,28 @@ def blit_tiles(layer_map: list,
         y += 1
 
 
+log.debug('Defining levels data')
 levels = {
+    '0': {
+        'locations': {
+            'main': {
+                'limitations': {
+                    'cords': {
+                        'start': {'x': None, 'y': None},
+                        'end': {'x': None, 'y': 31 * TILE_SIZE},
+                    },
+                    'scroll': {
+                        'left': 0,
+                        'up': 6 * TILE_SIZE,
+                        'right': int(44 * TILE_SIZE - WINDOW_SIZE[0] / 2),  # 47tiles - display size
+                        'down': (31 * TILE_SIZE) - WINDOW_SIZE[1] / 2,
+                    },
+                },
+            },
+        },
+        'starting_pos': (2 * TILE_SIZE, 12.25 * TILE_SIZE),
+        'num': 1,
+    },
     '1': {
         'locations': {
             'main': {
@@ -516,7 +751,8 @@ levels = {
                 },
             },
         },
-        'num': 1,
+        'starting_pos': (2 * TILE_SIZE, 12.25 * TILE_SIZE),
+        'num': 2,
     },
     '2': {
         'locations': {
@@ -535,7 +771,8 @@ levels = {
                 },
             },
         },
-        'num': 2,
+        'starting_pos': (2 * TILE_SIZE, 12.25 * TILE_SIZE),
+        'num': 3,
     },
     '3': {
         'locations': {
@@ -548,13 +785,32 @@ levels = {
                     'scroll': {
                         'left': 0,
                         'up': 6 * TILE_SIZE,
-                        'right': int(44 * TILE_SIZE - WINDOW_SIZE[0] / 2),  # 47tiles - display size
+                        'right': int(47 * TILE_SIZE - WINDOW_SIZE[0] / 2),  # 47tiles - display size
+                        'down': (31 * TILE_SIZE) - WINDOW_SIZE[1] / 2,
+                    },
+                },
+            },
+            'basement': {
+                'limitations': {
+                    'cords': {
+                        'start': {'x': None, 'y': None},
+                        'end': {'x': None, 'y': 31 * TILE_SIZE + player_rect.height},
+                    },
+                    'scroll': {
+                        'left': 48 * TILE_SIZE,  # 47tiles - display size
+                        'up': 2 * TILE_SIZE,
+                        'right': int(88 * TILE_SIZE - WINDOW_SIZE[0] / 2),  # 47tiles - display size
                         'down': (31 * TILE_SIZE) - WINDOW_SIZE[1] / 2,
                     },
                 },
             },
         },
-        'num': 3,
+        'starting_pos': (2 * TILE_SIZE, 12.25 * TILE_SIZE),
+        'num': 4,
+        'interactive_objects': {
+            'to_basement': [66.5 * TILE_SIZE, 18.25 * TILE_SIZE],
+            'to_main': [28 * TILE_SIZE, 13.25 * TILE_SIZE],
+        },
     },
     '4': {
         'locations': {
@@ -587,7 +843,12 @@ levels = {
                 },
             },
         },
-        'num': 4,
+        'starting_pos': (2 * TILE_SIZE, 12.25 * TILE_SIZE),
+        'num': 5,
+        'interactive_objects': {
+            'to_basement': [66.5 * TILE_SIZE, 18.25 * TILE_SIZE],
+            'to_main': [28 * TILE_SIZE, 13.25 * TILE_SIZE],
+        },
     },
     '5': {
         'locations': {
@@ -600,33 +861,25 @@ levels = {
                     'scroll': {
                         'left': 0,
                         'up': 6 * TILE_SIZE,
-                        'right': int(47 * TILE_SIZE - WINDOW_SIZE[0] / 2),  # 47tiles - display size
-                        'down': (31 * TILE_SIZE) - WINDOW_SIZE[1] / 2,
-                    },
-                },
-            },
-            'basement': {
-                'limitations': {
-                    'cords': {
-                        'start': {'x': None, 'y': None},
-                        'end': {'x': None, 'y': 31 * TILE_SIZE + player_rect.height},
-                    },
-                    'scroll': {
-                        'left': 48 * TILE_SIZE,  # 47tiles - display size
-                        'up': 2 * TILE_SIZE,
-                        'right': int(88 * TILE_SIZE - WINDOW_SIZE[0] / 2),  # 47tiles - display size
+                        'right': int(47 * TILE_SIZE - WINDOW_SIZE[0] / 2),  # tiles - display size
                         'down': (31 * TILE_SIZE) - WINDOW_SIZE[1] / 2,
                     },
                 },
             },
         },
-        'num': 5,
+        'starting_pos': (4.5 * TILE_SIZE, 24.5 * TILE_SIZE),
+        'num': 6,
+        'interactive_objects': {},
     },
 }
+log.debug('Levels data defined')
+
+log.debug('loding level')
 level = levels[str(level_name)]
 limitations = level['locations']['main']['limitations']
+log.debug('level loaded')
 
-# tile_rects.append(pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+log.debug('defining more settings')
 damage = {
     'spikes': 1,
     'lava': 1,
@@ -636,13 +889,13 @@ damaged_cooldown = 0
 damaged = False
 jump = False
 jump_cooldown = 0
-creative = False
 show_cords = False
 interactive_object = None
 enabled_e = False
 on_fire = False
 dead = False
 items_list = []
+log.debug('settings defined')
 
 
 def convert_game_frame() -> None:
@@ -668,7 +921,7 @@ def convert_game_frame() -> None:
     anim_game_frame['item'] = abs(int(true_anim_game_frame['item']))
 
 
-def blit_map():
+def blit_map() -> None:
     for layer in game_map:
         blit_tiles(layer,
                    ending=[round((scroll[0] + int(WINDOW_SIZE[0] / 2)) / TILE_SIZE) + 1,
@@ -711,6 +964,14 @@ def blit_map():
                 interactive_objects_rects[0].append(
                     pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE))
                 interactive_objects_rects[1].append('end')
+            elif io == '3':
+                interactive_objects_rects[0].append(
+                    pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+                interactive_objects_rects[1].append('goblin_0')
+            elif io == '4':
+                interactive_objects_rects[0].append(
+                    pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+                interactive_objects_rects[1].append('goblin_1')
             x += 1
         y += 1
 
@@ -739,46 +1000,299 @@ def convert_scroll() -> [int, int]:
 
 
 def parse_level():
-    global level, levels, limitations, level_name, game_map, game_interactive_objects, map_items
+    global level, levels, limitations, level_name, game_map, game_interactive_objects, map_items, starting_position
+    try:
+        game_map = [
+            [row.split(',') for row in layer] for layer in  # layer.split('\n') -> rows | row.split(',') -> ids
+            [layer.split('\n') for layer in levels_data_decrypted[level_name].split('\n\\\n')]
+            # map_decrypted.split('\n\\\n') -> layers
+        ]
+        # list with layers (lists) which contain rows which contain ids [layer[ row[id('42'), ...], row[] ], layer[...]]
 
-    with open(f'assets/data/maps/level {level_name}/map_background.csv') as f1, \
-            open(f'assets/data/maps/level {level_name}/map_mid.csv') as f2, \
-            open(f'assets/data/maps/level {level_name}/map_top.csv') as f3, \
-            open(f'assets/data/maps/level {level_name}/map_interactive_objects_types.csv') as f4, \
-            open(f'assets/data/maps/level {level_name}/map.csv', 'w') as target:
-        target.write(
-            f1.read() + '\\' + '\n' +
-            f2.read() + '\\' + '\n' +
-            f3.read() + '\\' + '\n' +
-            f4.read()[:-1]
-        )
+        map_items = game_map.pop(2)[:-1]
+        game_interactive_objects = game_map.pop(2)[:-1]
 
-    Crypt.map_encrypt(file_path=f'assets/data/maps/level {level_name}/map.csv', save=True,
-                      save_path='assets/data/game_map.dat',
-                      key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=')
-    map_decrypted = Crypt.map_decrypt(key=b'ECr41LS4MZZ8n0EnCvCeE-Xve-aufGYrgujmnHKJn5o=',
-                                      file_path='assets/data/game_map.dat')
-    # map_layers = [row.split(',') for row in [(layer.split('\n')) for layer in map_decrypted.split('\n\\\n')]]
-    # layers = [layer.split('\n') for layer in map_decrypted.split('\n\\\n')]
-    # game_map = []
-    # for layer in layers:
-    #     rows = []
-    #     for row in layer:
-    #         rows.append(row.split(','))
-    #     game_map.append(rows)
+        level = levels[str(level_name)]
+        limitations = level['locations']['main']['limitations']
+        starting_position = level['starting_pos']
+        enemy_spawn_points = {}
+        y = 0
+        for row in game_interactive_objects:
+            x = 0
+            for io in row:  # io = interactive objects
+                if io == '-1':
+                    pass
+                elif io == '3':
+                    enemy_spawn_points['zombie'] = [
+                        pygame.Rect(x * TILE_SIZE, (y - 1) * TILE_SIZE, TILE_SIZE, TILE_SIZE)]
+                elif io == '4':
+                    enemy_spawn_points['zombie'].append(
+                        pygame.Rect(x * TILE_SIZE, (y - 1) * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+                x += 1
+            y += 1
+        # check is zombie spawn points are in the the dictionary
+        if 'zombie' in enemy_spawn_points:
+            spawn_enemy('zombie', (enemy_spawn_points['zombie'][0].x, enemy_spawn_points['zombie'][0].y),
+                        enemy_spawn_points['zombie'])
+    except IndexError:
+        log.error('404 Level not found (99% there is no more levels)')
+        pygame.quit()
+        input('Press Enter to exit')
+        exit()
 
-    game_map = [
-        [row.split(',') for row in layer] for layer in  # layer.split('\n') -> rows | row.split(',') -> ids
-        [layer.split('\n') for layer in map_decrypted.split('\n\\\n')]  # map_decrypted.split('\n\\\n') -> layers
-    ]  # list with layers (lists) which contain rows which contain ids [layer[ row[id('42'), ...], row[] ], layer[...]]
 
-    # type(game_map) == list, type(game_map[0]) == list, type(game_map[0][0]) == list, type(game_map[0][0][0]) == str
+def spawn_enemy(enemy_type: str, cords: [int, int], spawn_points: list[pygame.Rect]):
+    global enemies
+    enemies.append(Enemy(enemy_type, cords, spawn_points))
 
-    map_items = game_map.pop(2)[:-1]
-    game_interactive_objects = game_map.pop(2)[:-1]
 
-    level = levels[str(level_name)]
-    limitations = level['locations']['main']['limitations']
+# TODO: сделать все классы рабочими :D
+class Enemy:
+    def __init__(self, enemy_type: str, cords: [int, int], spawn_points: list[pygame.Rect]):
+        self.type = enemy_type
+        self.moving = {'left': False, 'right': False, 'up': False, 'down': False}
+        self.direction = 'right'
+        self.convert_type_to_stats(enemy_type)
+        self.animation.update()
+        self.rect = pygame.Rect(*cords, self.animation.frame.get_width(),
+                                self.animation.frame.get_height())
+        self.y_momentum = 0
+        self.spawn_points = spawn_points
+        self.movement = [0, 0]
+
+    def convert_type_to_stats(self, enemy_type: str):
+        match enemy_type:
+            case 'zombie':
+                self.speed = 2
+                self.health = 5
+                self.attack = Attack('hand', 2, 125)
+                self.animation = EntityAnimation(images['enemies']['zombie'], 'idle')
+                self.animation.speed = 2
+            case 'big_zombie':
+                self.speed = 1
+                self.health = 10
+                self.attack = Attack('hand', 3, 0)
+                self.animation = EntityAnimation(images['enemies']['big_zombie'], 'idle')
+                self.animation.speed = 1
+            case 'tiny_zombie':
+                self.speed = 4
+                self.health = 1
+                self.attack = Attack('hand', 1, 0)
+                self.animation = EntityAnimation(images['enemies']['tiny_zombie'], 'idle')
+                self.animation.speed = 4
+            case 'ice_zombie':
+                self.speed = 3
+                self.health = 5
+                self.attack = Attack('hand', 3, 0)
+                self.animation = EntityAnimation(images['enemies']['ice_zombie'], 'idle')
+                self.animation.speed = 3
+            case 'big_demon':
+                self.speed = 1
+                self.health = 20
+                self.attack = Attack('hand', 5, 0)
+                self.animation = EntityAnimation(images['enemies']['big_demon'], 'idle')
+                self.animation.speed = 1
+            case 'chort':
+                self.speed = 2
+                self.health = 5
+                self.attack = Attack('hand', 3, 0)
+                self.animation = EntityAnimation(images['enemies']['chort'], 'idle')
+                self.animation.speed = 2
+            case 'goblin':
+                self.speed = 3
+                self.health = 5
+                self.attack = Attack('hand', 2, 0)
+                self.animation = EntityAnimation(images['enemies']['goblin'], 'idle')
+                self.animation.speed = 3
+            case 'imp':
+                self.speed = 4
+                self.health = 5
+                self.attack = Attack('hand', 2, 0)
+                self.animation = EntityAnimation(images['enemies']['imp'], 'idle')
+                self.animation.speed = 4
+            case 'masked_orc':
+                self.speed = 5
+                self.health = 5
+                self.attack = Attack('hand', 1, 0)
+                self.animation = EntityAnimation(images['enemies']['masked_orc'], 'idle')
+                self.animation.speed = 5
+            case 'muddy':
+                self.speed = 2
+                self.health = 5
+                self.attack = Attack('hand', 3, 0)
+                self.animation = EntityAnimation(images['enemies']['muddy'], 'idle')
+                self.animation.speed = 2
+            case 'necromancer':
+                self.speed = 1
+                self.health = 10
+                self.attack = Attack('hand', 10, 0)  # TODO add spell attack
+                self.animation = EntityAnimation(images['enemies']['necromancer'], 'idle')
+                self.animation.speed = 1
+            case 'ogre':
+                self.speed = 1
+                self.health = 10
+                self.attack = Attack('hand', 5, 0)
+                self.animation = EntityAnimation(images['enemies']['ogre'], 'idle')
+                self.animation.speed = 1
+            case 'orc_shaman':
+                self.speed = 1
+                self.health = 10
+                self.attack = Attack('hand', 5, 0)  # TODO add spell attack
+                self.animation = EntityAnimation(images['enemies']['orc_shaman'], 'idle')
+                self.animation.speed = 1
+            case 'orc_warrior':
+                self.speed = 5
+                self.health = 10
+                self.attack = Attack('hand', 1, 0)
+                self.animation = EntityAnimation(images['enemies']['orc_warrior'], 'idle')
+                self.animation.speed = 5
+            case 'swampy':
+                self.speed = 3
+                self.health = 5
+                self.attack = Attack('hand', 2, 0)
+                self.animation = EntityAnimation(images['enemies']['swampy'], 'idle')
+                self.animation.speed = 3
+            case 'wogol':
+                self.speed = 6
+                self.health = 10
+                self.attack = Attack('hand', 2, 0)
+                self.animation = EntityAnimation(images['enemies']['wogol'], 'idle')
+                self.animation.speed = 6
+            case 'skelet':
+                self.speed = 1
+                self.health = 5
+                self.attack = Attack('hand', 5, 0)  # TODO add bow attack
+                self.animation = EntityAnimation(images['enemies']['skelet'], 'idle')
+                self.animation.speed = 1
+            case _:
+                raise Exception(f'Unknown enemy type: {enemy_type}')
+
+    def update(self):
+        global tile_rects
+
+        self.moving = {'left': False, 'right': False, 'up': False, 'down': False}
+        # go to left while didn't passed spawn_points[0]
+        if self.rect.x > self.spawn_points[0].x and self.direction == 'left':
+            self.moving['left'] = True
+        elif self.direction == 'left':
+            self.direction = 'right'
+
+        # go to right while didn't passed spawn_points[1]
+        if self.rect.x < self.spawn_points[1].x and self.direction == 'right':
+            self.moving['right'] = True
+        elif self.direction == 'right':
+            self.direction = 'left'
+
+        # if passed spawn_points[0] or spawn_points[1] - go to them and change direction to opposite
+        if self.rect.x > self.spawn_points[1].x:
+            self.rect.x = self.spawn_points[1].x
+            self.direction = 'left'
+        elif self.rect.x < self.spawn_points[0].x:
+            self.rect.x = self.spawn_points[0].x
+            self.direction = 'right'
+
+        # update animation and flip image if needed
+        if self.moving['left'] or self.moving['right']:
+            self.animation.set_animation_type('run')
+        else:
+            self.animation.set_animation_type('idle')
+
+        self.animation.update()
+        if self.moving['right'] != self.moving['left']:  # XOR, if moving right or left but not both
+            self.animation.flip = self.moving['left']
+
+        self.rect = pygame.Rect(self.rect.x, self.rect.y, self.animation.frame.get_width(),
+                                self.animation.frame.get_height())
+
+        collision = self.move(tile_rects)
+        if collision['bottom']:
+            self.y_momentum = 0
+
+        # reduce cooldown of attack
+        if self.attack.cooldown > 0:
+            self.attack.cooldown -= 1
+
+    def move(self, tiles):  # TODO fix y movement making the enemy jump and not walking in straight line
+        # move right/up with speed if moving right/up and not moving left/down
+        # else move left/down with speed if moving left/down and not moving right
+        self.movement = [0, 0]
+        self.movement[1] += self.y_momentum
+        self.y_momentum += 0.2
+        if self.y_momentum > 3:
+            self.y_momentum = 3
+        if self.moving['right'] != self.moving['left']:  # XOR
+            self.movement[0] += self.speed if self.moving['right'] else -self.speed
+        if self.moving['up'] != self.moving['down']:  # XOR
+            self.movement[1] += self.speed if self.moving['up'] else -self.speed
+
+        collision_types = {'top': False, 'bottom': False, 'right': False, 'left': False}
+
+        self.rect.x += self.movement[0]  # move player (players rect) to x position (right / left)
+        hit_list = collision_test(self.rect, tiles)  # check collision on x axis
+        for tile in hit_list:
+            if self.movement[0] > 0:  # if moving right
+                self.rect.right = tile.left  # set right side of a player rect to left side of a tile
+                collision_types['right'] = True
+            elif self.movement[0] < 0:  # if moving left
+                self.rect.left = tile.right  # set left side of a player rect to right side of a tile
+                collision_types['left'] = True
+
+        self.rect.y += self.movement[1]  # move player (players rect) to y position (up / down)
+        hit_list = collision_test(self.rect, tiles)  # check collision on x axis
+        for tile in hit_list:
+            if self.movement[1] > 0:  # if moving down
+                self.rect.bottom = tile.top  # set bottom side of a player rect to top side of a tile
+                collision_types['bottom'] = True
+            elif self.movement[1] < 0:  # if moving up
+                self.rect.top = tile.bottom  # set top side of a player rect to bottom side of a tile
+                collision_types['top'] = True
+        return collision_types  # return players rect and all collision types
+
+
+class Attack:
+    def __init__(self, attack_type: str, damage: int, cooldown_time: int):
+        self.attack_type = attack_type
+        self.damage = damage
+        self.cooldown_time = cooldown_time
+        self.cooldown = 0
+
+    def attack(self, target_hp: int):
+        if self.cooldown == 0:
+            target_hp -= self.damage
+            self.cooldown = self.cooldown_time
+        return target_hp
+
+
+class Animation:
+    def __init__(self, sprites: list, speed: int = 1, loop: bool = True):
+        self.sprites = sprites
+        self.speed = speed
+        self.loop = loop
+        self.frame = None
+        self.__frame_counter = 0
+        self.__frame_counter_max = len(self.sprites)
+        self.flip = False
+
+    def update(self):
+        if self.__frame_counter >= self.__frame_counter_max:
+            self.__frame_counter = 0 if self.loop else -self.__frame_counter
+
+        self.__frame_counter += self.speed / 60
+        self.frame = self.sprites[math.floor(abs(self.__frame_counter) % self.__frame_counter_max)]
+
+
+class EntityAnimation(Animation):
+    def __init__(self, animations_package: dict[str, list], animation_type: str, speed: int = 1):
+        super().__init__(animations_package[animation_type])
+        self.speed = speed
+        self.loop = False
+        self.animations_package = animations_package
+        self.animation_type = animation_type
+
+    def set_animation_type(self, animation_type: str):
+        self.animation_type = animation_type
+        self.sprites = self.animations_package[animation_type]
+        self.__frame_counter_max = len(self.sprites)
 
 
 def calculate_health():
@@ -791,7 +1305,7 @@ def calculate_health():
         'lava': [],
         'water': [],
     }
-    if damaged_cooldown == 0 and not creative:
+    if damaged_cooldown == 0 and consoleAPI.gamemode != 'creative':
         if spikes_collide:
             damaged_cooldown = 50
             damaged = True
@@ -809,7 +1323,7 @@ def calculate_health():
         damaged_cooldown = 0
         damaged = False
 
-    if on_fire and damaged_cooldown == 0 and not creative:
+    if on_fire and damaged_cooldown == 0 and consoleAPI.gamemode != 'creative':
         if health['player'] > 1:
             damaged_cooldown = 120
         else:
@@ -828,31 +1342,113 @@ def text_box(x: int, y: int, w: int, h: int, b: int):
 
 
 restart = False
+
+
+def get_text_size(text: str, font: Font = font) -> int:
+    text_size = 0
+    for char in text:
+        if char != ' ':
+            text_size += font.characters[char].get_width() + font.spacing
+        else:
+            text_size += font.space_width + font.spacing
+    return text_size
+
+
+def death_menu(death_message: str = 'You died'):
+    global screen
+    death_screen_background = pygame.Surface(WINDOW_SIZE)
+    death_screen_background.fill((160, 160, 160))
+    death_screen_background.set_alpha(2)
+    tick_num = 0
+
+    while True:
+        if tick_num == 180:
+            break
+
+        tick_num += 1
+        death_screen = pygame.Surface((WINDOW_SIZE[0] / 4, WINDOW_SIZE[1] / 4), SRCALPHA, 32)
+
+        font.render(
+            death_screen,
+            death_message,
+            (
+                (WINDOW_SIZE[0] / 4 - get_text_size(death_message)) / 2,
+                WINDOW_SIZE[1] / 20
+            )
+        )
+
+        for event in pygame.event.get():
+            if event.type == QUIT:  # check for window quit
+                pygame.quit()  # stop pygame
+                exit()  # stop script
+
+        death_screen = pygame.transform.scale(death_screen, WINDOW_SIZE)
+        screen.blit(death_screen_background, (0, 0))
+        screen.blit(death_screen, (0, 0))
+
+        pygame.display.update()  # update display
+        clock.tick(60)  # maintain 60 fps
+
+
+def black_screen():
+    surf = pygame.Surface(WINDOW_SIZE)
+    surf.fill((0, 0, 0))
+    surf.set_alpha(5)
+    tick_num = 0
+
+    while True:
+        if tick_num == 60:
+            break
+
+        tick_num += 1
+        for event in pygame.event.get():
+            if event.type == QUIT:  # check for window quit
+                pygame.quit()  # stop pygame
+                exit()  # stop script
+
+        screen.blit(surf, (0, 0))
+        pygame.display.update()  # update display
+        clock.tick(60)  # maintain 60 fps
+
+level_save = None
+log.debug('Starting the game')
 while True:  # game loop
+    speed = consoleAPI.speed
+
     if old_level_name != level_name:
+        enemies = []
         parse_level()
+        level_save = {
+            'player_health': health['player'],
+            'on_fire': on_fire,
+        }
         restart = True
         old_level_name = level_name
 
     display.fill((146, 244, 255))
     # noinspection PyUnresolvedReferences
-    if player_rect.y >= limitations['cords']['end']['y']:
+    if limitations['cords']['end']['y'] is not None and player_rect.y >= limitations['cords']['end']['y']:
         dead = True
 
     if dead:
+        death_menu()
+        black_screen()
         restart = True
-        health['player'] = 6
+        player_flip = False
+        health['player'] = 6 if level_save is None else level_save['player_health']
         damaged_cooldown = 0
         damaged = False
         jump = False
         interactive_object = None
-        level_name = 1
         enabled_e = False
+        on_fire = False if level_save is None else level_save['on_fire']
+        is_moving = False
+        moving['left'] = False
+        moving['right'] = False
 
     if restart:
-        player_rect = pygame.Rect(STARTING_POSITION[0], STARTING_POSITION[1], player_image[0].get_width(),
+        player_rect = pygame.Rect(starting_position[0], starting_position[1], player_image[0].get_width(),
                                   player_image[0].get_height())
-        on_fire = False
         dead = False
         restart = False
         limitations = level['locations']['main']['limitations']
@@ -863,63 +1459,65 @@ while True:  # game loop
     scroll = convert_scroll()
 
     blit_map()
-    if show_tutorial:
-        if level['num'] == 1:
-            if player_rect.x < 250:
-                box_text = 'Use A and D to move'
-                cords = (10, 7)
-            elif player_rect.x > 550:
-                box_text = 'Press E to interact'
-                cords = (34, 7)
-            else:
-                tutorial_surf = box_text = cords = None
-        elif level['num'] == 2:
-            if 7 * TILE_SIZE < player_rect.x < 26 * TILE_SIZE:
-                box_text = 'Use W or Space to jump'
-                cords = (18, 7)
-            else:
-                tutorial_surf = box_text = cords = None
-        elif level['num'] == 3:
-            if 10 * TILE_SIZE < player_rect.x < 16 * TILE_SIZE:
-                box_text = 'Lava is hot'
-                cords = (16.75, 7)
-            elif 17 * TILE_SIZE < player_rect.x < 30 * TILE_SIZE:
-                box_text = 'While water is cold'
-                cords = (25, 7)
-            else:
-                tutorial_surf = box_text = cords = None
-        elif level['num'] == 4:
-            if 10 * TILE_SIZE < player_rect.x < 16 * TILE_SIZE:
-                box_text = 'Sometimes the answer isn\'t on the surface'
-                cords = (13, 7)
-            else:
-                tutorial_surf = box_text = cords = None
-        elif level['num'] == 5:
-            if 27 * TILE_SIZE < player_rect.x < 33 * TILE_SIZE:
-                box_text = 'I think you know why you shouldn\'t step on thorns'
-                cords = (22, 7)
-            elif 31 * TILE_SIZE < player_rect.x:
-                box_text = 'And try not to die'
-                cords = (36, 7)
-            else:
-                tutorial_surf = box_text = cords = None
+    if level['num'] == 1:
+        if player_rect.x < 250:
+            box_text = 'Use A and D to move'
+            cords = (10, 7)
+        elif player_rect.x > 550:
+            box_text = 'Press F to interact'
+            cords = (34, 7)
         else:
             tutorial_surf = box_text = cords = None
-        if cords is not None and box_text is not None:
-            text_size = 0
-            for char in box_text:
-                if char != ' ':
-                    text_size += font.characters[char].get_width() + font.spacing
-                else:
-                    text_size += font.space_width + font.spacing
-            tutorial_surf = pygame.Surface((text_size + 24, 26), pygame.SRCALPHA, 32)
+    elif level['num'] == 2:
+        if 7 * TILE_SIZE < player_rect.x < 26 * TILE_SIZE:
+            box_text = 'Use W or Space to jump'
+            cords = (18, 7)
+        else:
+            tutorial_surf = box_text = cords = None
+    elif level['num'] == 3:
+        if 10 * TILE_SIZE < player_rect.x < 16 * TILE_SIZE:
+            box_text = 'Lava is hot'
+            cords = (16.75, 7)
+        elif 17 * TILE_SIZE < player_rect.x < 30 * TILE_SIZE:
+            box_text = 'While water is cold'
+            cords = (25, 7)
+        else:
+            tutorial_surf = box_text = cords = None
+    elif level['num'] == 4:
+        if 10 * TILE_SIZE < player_rect.x < 16 * TILE_SIZE:
+            box_text = 'Sometimes the answer isn\'t above the surface'
+            cords = (13, 7)
+        else:
+            tutorial_surf = box_text = cords = None
+    elif level['num'] == 5:
+        if 27 * TILE_SIZE < player_rect.x < 33 * TILE_SIZE:
+            box_text = 'I think you know why you shouldn\'t step on thorns'
+            cords = (22, 7)
+        elif 31 * TILE_SIZE < player_rect.x and 15 * TILE_SIZE < player_rect.y and limitations == \
+                level['locations']['main']['limitations']:
+            box_text = 'There is monsters in next level, be careful'
+            cords = (28, 10)
+        else:
+            tutorial_surf = box_text = cords = None
+    else:
+        tutorial_surf = box_text = cords = None
+    if cords is not None:
+        if box_text is None:
+            box_text = ''
+        text_size = 0
+        for char in box_text:
+            if char != ' ':
+                text_size += font.characters[char].get_width() + font.spacing
+            else:
+                text_size += font.space_width + font.spacing
+        tutorial_surf = pygame.Surface((text_size + 24, 26), pygame.SRCALPHA, 32)
 
-            box = text_box(x=0, y=0, w=tutorial_surf.get_width(), h=tutorial_surf.get_height(), b=4)
-            pygame.draw.rect(tutorial_surf, (12, 12, 12), box[0], 0, 5)
-            pygame.draw.rect(tutorial_surf, (16, 29, 66), box[1], 0, 5)
+        box = text_box(x=0, y=0, w=tutorial_surf.get_width(), h=tutorial_surf.get_height(), b=4)
+        pygame.draw.rect(tutorial_surf, (12, 12, 12), box[0], 0, 5)
+        pygame.draw.rect(tutorial_surf, (16, 29, 66), box[1], 0, 5)
 
-            font.render(tutorial_surf, box_text, (12, 6))
-            display.blit(tutorial_surf, (cords[0] * TILE_SIZE - scroll[0], cords[1] * TILE_SIZE - scroll[1]))
+        font.render(tutorial_surf, box_text, (12, 6))
+        display.blit(tutorial_surf, (cords[0] * TILE_SIZE - scroll[0], cords[1] * TILE_SIZE - scroll[1]))
 
     player_movement = [0, 0]
     if moving['right'] != moving['left'] and not damaged:  # XOR
@@ -940,10 +1538,24 @@ while True:  # game loop
     if player_y_momentum > 3:
         player_y_momentum = 3
 
-    if creative:
+    if consoleAPI.gamemode == 'creative':
         player_y_momentum = 0
 
     player_rect, collisions = move(player_rect, player_movement, tile_rects)
+
+    for enemy in enemies:
+        enemy.update()
+        enemy.animation.update()
+        display.blit(
+            pygame.transform.flip(enemy.animation.frame, enemy.animation.flip, False),
+            (enemy.rect.x - scroll[0], enemy.rect.y - scroll[1]),
+        )
+        # check if player rect collides with enemy rect
+        if player_rect.colliderect(enemy.rect) and damaged_cooldown == 0:
+            damaged_cooldown = 50
+            damaged = True
+            # TODO fix bug when player dies, after respawn, all tiles are solid and 16*16
+            health['player'] = enemy.attack.attack(health['player'])
     tile_rects = []
 
     calculate_health()
@@ -987,11 +1599,14 @@ while True:  # game loop
             )
     if moving['right'] != moving['left'] and not damaged:  # XOR, if moving right or left but not both
         player_flip = moving['left']
-    for event in pygame.event.get():  # event loop
+
+    events = pygame.event.get()
+    for event in events:
         if event.type == QUIT:  # check for window quit
+            log.debug('Game ended')
             pygame.quit()  # stop pygame
             exit()  # stop script
-        if event.type == KEYDOWN:
+        elif not console.enabled and event.type == KEYDOWN:
             if event.key == K_RIGHT or event.key == K_d:
                 moving['right'] = True
             elif event.key == K_LEFT or event.key == K_a:
@@ -999,19 +1614,19 @@ while True:  # game loop
 
             elif event.key == K_UP or event.key == K_w or event.key == K_SPACE:
                 jump = True
-                if creative:
+                if consoleAPI.gamemode == 'creative':
                     player_rect.y -= 16
             elif event.key == K_DOWN or event.key == K_s:
-                if creative:
+                if consoleAPI.gamemode == 'creative':
                     player_rect.y += 16
 
-            elif event.key == K_e:
+            elif event.key == K_f:
                 if interactive_object is not None:
                     if interactive_object == 'to_basement':
-                        player_rect.x, player_rect.y = 66.5 * TILE_SIZE, 18.25 * TILE_SIZE
+                        player_rect.x, player_rect.y = level['interactive_objects']['to_basement']
                         limitations = level['locations']['basement']['limitations']
                     elif interactive_object == 'to_main':
-                        player_rect.x, player_rect.y = 28 * TILE_SIZE, 13.25 * TILE_SIZE
+                        player_rect.x, player_rect.y = level['interactive_objects']['to_main']
                         limitations = level['locations']['main']['limitations']
                     elif interactive_object == 'big_health_potion':
                         health['player'] += 3
@@ -1027,6 +1642,12 @@ while True:  # game loop
                             enabled_e = True
                         level_name += 1
 
+        elif event.type == pygame.KEYUP:
+            # Toggle console on/off the console
+            if event.key == pygame.K_F1:
+                # Toggle the console - if on then off if off then on
+                console.toggle()
+
             elif event.key == K_F3:
                 show_cords = not show_cords
         if event.type == KEYUP:
@@ -1039,8 +1660,7 @@ while True:  # game loop
                 jump = False
                 jump_cooldown = 0
 
-            elif event.key == K_f:
-                creative = not creative
+    items_list = []
 
     if air_timer < 6 and jump and not damaged and jump_cooldown == 0:
         player_y_momentum = -5
@@ -1052,7 +1672,7 @@ while True:  # game loop
         is_moving = False
         player_image = player_images['hit']
 
-    elif any(value for value in moving.values()):  # if one of the values in {moving} is true
+    elif any(moving.values()):  # if one of the values in {moving} is true
         is_moving = True
         player_image = player_images['run']
     else:
@@ -1096,11 +1716,24 @@ while True:  # game loop
         ui.blit(images['ui']['hearts'][fullness_type], (TILE_SIZE * i, 0))
 
     if show_cords:
-        print((player_rect.x, player_rect.y))
+        log.info(
+            f'rl:{(player_rect.x, player_rect.y)} | cords:{(player_rect.x // TILE_SIZE, player_rect.y // TILE_SIZE)}')
+        console.write(str((player_rect.x, player_rect.y)))
 
     ui_surf = pygame.transform.scale(ui, (96, 32))
-    if not creative:
+    if consoleAPI.gamemode != 'creative':
         display.blit(ui_surf, (0, 0))
+
+    if enabled_e and interactive_object is not None:  # player is interacting with io:
+        e_button = pygame.Surface((30, 30), pygame.SRCALPHA, 32)
+        box = text_box(x=0, y=0, w=30, h=30, b=2)
+        # noinspection PyUnresolvedReferences,PyTypeChecker
+        pygame.draw.rect(e_button, (240, 240, 240), box[0], 0, 15)
+        pygame.draw.rect(e_button, (18, 18, 18), box[1], 0, 15)
+        font.render(e_button, 'F', (11, 9))
+        e_button = pygame.transform.scale(e_button, (16, 16))
+        display.blit(e_button, (player_rect.x - scroll[0] + 20, player_rect.y - scroll[1] - 15))
+
     surf = pygame.transform.scale(display, WINDOW_SIZE)
     screen.blit(surf, (0, 0))
     if len(collision_test(player_rect, interactive_objects_rects[0])) > 0:
@@ -1112,17 +1745,12 @@ while True:  # game loop
     else:
         interactive_object = None
     interactive_objects_rects = [[], []]
-    if enabled_e:
-        e_button = pygame.Surface((30, 30), pygame.SRCALPHA, 32)
-        box = text_box(x=0, y=0, w=30, h=30, b=2)
-        # noinspection PyUnresolvedReferences,PyTypeChecker
-        pygame.draw.rect(e_button, (240, 240, 240), box[0], 0, 3)
-        if interactive_object is not None:  # if player is interacting with io
-            pygame.draw.rect(e_button, (18, 18, 18), box[1], 0, 3)
-        else:
-            pygame.draw.rect(e_button, (53, 53, 53), box[1], 0, 3)
-        font.render(e_button, 'E', (11, 9))
-        e_button = pygame.transform.scale(e_button, (60, 60))
-        screen.blit(e_button, (WINDOW_SIZE[0] - e_button.get_width() - 10, 10))
+
+    # Read and process events related to the console in case console is enabled
+    console.update(events)
+
+    # Display the console if enabled or animation is still in progress
+    console.show(screen)
+
     pygame.display.update()  # update display
     clock.tick(60)  # maintain 60 fps
