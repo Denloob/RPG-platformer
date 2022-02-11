@@ -1023,17 +1023,17 @@ def parse_level():
                 if io == '-1':
                     pass
                 elif io == '3':
-                    enemy_spawn_points['zombie'] = [
+                    enemy_spawn_points['goblin'] = [
                         pygame.Rect(x * TILE_SIZE, (y - 1) * TILE_SIZE, TILE_SIZE, TILE_SIZE)]
                 elif io == '4':
-                    enemy_spawn_points['zombie'].append(
+                    enemy_spawn_points['goblin'].append(
                         pygame.Rect(x * TILE_SIZE, (y - 1) * TILE_SIZE, TILE_SIZE, TILE_SIZE))
                 x += 1
             y += 1
-        # check is zombie spawn points are in the the dictionary
-        if 'zombie' in enemy_spawn_points:
-            spawn_enemy('zombie', (enemy_spawn_points['zombie'][0].x, enemy_spawn_points['zombie'][0].y),
-                        enemy_spawn_points['zombie'])
+        # check is goblin spawn points are in the the dictionary
+        if 'goblin' in enemy_spawn_points:
+            spawn_enemy('goblin', (enemy_spawn_points['goblin'][0].x, enemy_spawn_points['goblin'][0].y),
+                        enemy_spawn_points['goblin'])
     except IndexError:
         log.error('404 Level not found (99% there is no more levels)')
         pygame.quit()
