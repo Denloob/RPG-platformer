@@ -20,7 +20,8 @@ class Parse:
     def all_filenames(self) -> list:
         return list(self.data['frames'].keys())
 
-    def parse_by_name(self, startswith: str, replacewith: str = None, extension: str = 'png') -> dict:
+    def parse_by_name(self, startswith: str,replacewith: str = None, extension: str = 'png')\
+            -> dict[str, pygame.Surface]:
         if replacewith is None:
             replacewith = f"{startswith}_"
 
