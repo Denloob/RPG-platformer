@@ -1,0 +1,14 @@
+level.key
+assets/data/maps/
+assets/data/tilesets/
+assets/textures/0x72_DungeonTilesetII_v1.4
+assets/textures/Tiles/
+assets/textures/map/
+assets/textures/misc/
+assets/textures/
+stats.prof
+TaskScheduleGDD.xlsx
+~TaskScheduleGDD.xlsx
+.idea/
+tmp/
+test.py

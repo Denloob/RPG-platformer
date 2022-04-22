@@ -198,6 +198,26 @@ class CommandLineProcessor(cmd.Cmd):
 			self.output.write(str(E), (255, 0, 0))
 			return -1
 
+	def do_setblock(self, params):
+		""" set the block on x y to block_id
+		"""
+		try:
+			if params == "" or len(params.split(' ')) != 3:
+				self.output.write(f"Wrong syntax:   x, y and block_id are required.")
+				return
+			x, y, block_id = params.split(' ')
+			if x == '~':
+				x = str(self.app.player.x//self.app.TILE_SIZE)
+			if y == '~':
+				y = str(self.app.player.y//self.app.TILE_SIZE)
+
+			self.app.set_tile(int(x), int(y), block_id)
+			self.output.write(f'Set block at {x}, {y} to {block_id}')
+			return
+		except Exception as E:
+			self.output.write(str(E), (255, 0, 0))
+			return -1
+
 class Header:
 	''' Class specifying properties of Console header and/or footer.
 	It supports different one-line text features, such as scrolling 
